@@ -6,7 +6,9 @@
     --subtext: #ADADAD;
     --background: #E5E5E5;
 
-    --title: font-size: 1.8rem;
+    --title: 1.8rem;
+    --subtitle: 3.2rem;
+    --subsection: 1.8rem;
 }
 
 * {
@@ -32,12 +34,18 @@ body {
     
 }
 h2{
-    font-size: 3.2rem;
+    font-size: var(--subtitle);
 }
 
 .container {
     padding: 0 2rem;
     
+}
+
+.subtitle{
+    padding-top: 3rem;
+    color: var(--btn-and-title);
+    font-size: 600;
 }
 
 .navbar {
@@ -168,7 +176,7 @@ h2{
 
 .card__nombre {
     color: var(--btn-and-title);
-    font-size: 1.8rem;
+    font-size: var(--subtitle);
     font-weight: bold;
     margin-bottom: 1rem;
 }
@@ -251,15 +259,113 @@ h2{
     background-color: var(--btn-and-title);
 }
 
+.box-shadow{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 15%), 0 2px 2px rgb(0 0 0 / 15%), 0 4px 4px rgb(0 0 0 / 15%), 0 8px 8px rgb(0 0 0 / 15%);
+}
+
 .services__card{
+    min-height: 30rem;
     margin-top: 2rem;
     display: flex;
     gap: 1.5rem;
 }
 
 .services__about{
+    width: 50%;
     display: block;
     align-items: center;
     text-align: center;
     background-color: var(--white);
 }
+.services__card__img{
+    padding-top: 5rem;
+}
+
+.services__p{
+    margin-top: 1rem;
+}
+
+.about-me{
+    margin-top: 4rem;
+    position: relative;
+}
+
+.about-me__h2{
+    padding-top: 1rem;
+    
+}
+
+.about-me__p{
+    margin-top: 2rem;
+    color: var(--subtext);
+    font-size: var(--subsection);
+    line-height: 2.5rem;
+}
+
+.about-me__escuelas{
+    width: 100%;
+    display: flex;
+}
+.bg-svg{
+    position: absolute;
+    background-image: url("../img/Vectores/Group\ 84-1.svg");
+    background-repeat: no-repeat;
+    width: 16rem;
+    height: 16rem;
+    background-size: contain;
+    top: 0;
+    right: 0;
+    
+}
+
+.about-me__escuela{
+    padding-top: 5rem;
+    width: 50%;
+    text-align: center;
+}
+
+.about-me__p--margin{
+    margin-top: .5rem;
+}
+
+.skills{
+    width: 100%;
+}
+
+.skills__h2{
+    padding-top: 1rem ;
+}
+
+.skills__percentages{
+    width: 100%;
+}
+
+.skills__items{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+
+}
+
+.skills__item-container{
+    background-color: var(--white);
+    display: block;
+    position: relative;
+    padding: 0 2rem;
+    
+}
+
+.skills__line{
+    width: 70%;
+    height: .4rem;
+    position: absolute;
+    left: 0;
+    background-color: var(--azul-verde);
+}
+
+.skills__h3{
+    padding-left: 3rem;
+}
+
