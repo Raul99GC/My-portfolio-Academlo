@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,27 +17,27 @@
 </head>
 
 <body>
-
-    <header class="navbar">
-        <div class="navbar__container">
-            <div class="navbar__icon-menu">
-                <i id="navbarBtn" class='nav__i bx bx-menu'></i>
-            </div>
-
-            <nav class="navbar__menu">
-                <ul class="main-menu ">
-                    <li class="main-menu__item"><a class="main-menu__link" href="#">Home</a></li>
-                    <li class="main-menu__item"><a class="main-menu__link" href="#">Servicios</a></li>
-                    <li class="main-menu__item"><a class="main-menu__link" href="#">Acerca de Mi</a></li>
-                    <li class="main-menu__item"><a class="main-menu__link" href="#">Mis habilidades</a></li>
-                    <li class="main-menu__item"><a class="main-menu__link" href="#">Mi portafolio</a></li>
-                    <li class="main-menu__item"><a class="main-menu__link" href="#">Contacto</a></li>
-                </ul>
-            </nav>
-
-        </div>
-    </header>
     <div class="container">
+        <header class="navbar">
+            <div class="navbar__container">
+                <div class="navbar__icon-menu">
+                    <i id="navbarBtn" class='nav__i bx bx-menu'></i>
+                </div>
+
+                <nav class="navbar__menu">
+                    <ul class="main-menu ">
+                        <li class="main-menu__item"><a class="main-menu__link" href="#">Home</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="#">Servicios</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="#">Acerca de Mi</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="#">Mis habilidades</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="#">Mi portafolio</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+
 
         <section class="section-card">
             <div class="card">
@@ -76,8 +77,8 @@
                         <h2 class="services__subt-txt">Servicios</h2>
                     </div>
 
-                    <img src="assets/img/icons/arrow-left 1.svg" alt="icon flecha izquierda" class="services__arrow">
-                    <img src="assets/img/icons/arrow-right 1.svg" alt="icon flecha derecha" class="services__arrow">
+                    <img src="assets/img/icons/arrow-left 1.svg" alt="icon flecha izquierda" class="services__arrow services__arrow--none">
+                    <img src="assets/img/icons/arrow-right 1.svg" alt="icon flecha derecha" class="services__arrow services__arrow--none">
                 </div>
                 <div class="services__card">
                     <div class="services__about box-shadow">
@@ -88,6 +89,16 @@
                     <div class="services__about box-shadow">
                         <img class="services__card__img" src="assets/img/icons/feather_search.svg" alt="">
                         <h2 class="services__h2">Research</h2>
+                        <p class="services__p">Desde diseño hasta implementacion del desarrollo</p>
+                    </div>
+                    <div class="services__about box-shadow services__about--none">
+                        <img class="services__card__img" src="assets/img/icons/majesticons_speakerphone-line.svg" alt="">
+                        <h2 class="services__h2">Marketing</h2>
+                        <p class="services__p">desde diseño hasta implementacion del desarollo</p>
+                    </div>
+                    <div class="services__about--none services__about  box-shadow">
+                        <img class="services__card__img" src="assets/img/icons/ic_outline-web-asset.svg" alt="">
+                        <h2 class="services__h2">Web Desing</h2>
                         <p class="services__p">Desde diseño hasta implementacion del desarrollo</p>
                     </div>
                 </div>
@@ -164,22 +175,61 @@
 
             <section class="contact">
                 <div class="subtitle">
-                    <h2 class="">ACERCA</h2>
-                    <h2 class="">DE MÍ</h2>
+                    <h2 class="">MI</h2>
+                    <h2 class="">PORTAFOLIO</h2>
                 </div>
 
+                <div class="galery">
+                    <div class="galery__pages box-shadow">
+                        <a class="galery__link " href="#">
+                            <img class="galery__img" src="assets/img/Logos-Imágenes/image 9-1.png"
+                                alt="pagina beauty app">
+                        </a>
+                        <h3 class="galery__h3 ">Beauty app</h3>
+                    </div>
+                    <div class="galery__pages box-shadow">
+                        <a class="galery__link " href="#">
+                            <img class="galery__img" src="assets/img/Logos-Imágenes/image 10.png"
+                                alt="pagina beauty app">
+                        </a>
+                        <h3 class="galery__h3 ">training app</h3>
+                    </div>
+                </div>
             </section>
+
+            <div class="contact">
+                <div class="subtitle">
+                    <h2 class="contact__h2">CONTACT</h2>
+                </div>
+
+                <div class="contact__boxes">
+                    <div class="contact__box box-shadow">
+                        <img class="contact__img" src="assets/img/icons/phone 3.svg" alt="">
+                        <h3>Numero celular</h3>
+                        <p>1234567899</p>
+                    </div>
+                    <div class="contact__box box-shadow">
+                        <img class="contact__img" src="assets/img/icons/mail 3.svg" alt="">
+                        <h3>Numero celular</h3>
+                        <p>ejemplo@correo.com</p>
+                    </div>
+                </div>
+            </div>
         </main>
 
+        <footer class="footer">
+            <div class="subtitle subtitle--blue">
+                <h3 class="footer__h3">Hecho con ♥ en Academlo</h3>
+            </div>
 
-
+        </footer>
     </div>
 
 
 
     <!-- ========================================= FOOTER =================================================== -->
 
-    <footer></footer>
+
 
     <script src="assets/js/main.js"></script>
 </body>
