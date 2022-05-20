@@ -6,7 +6,7 @@
     --subtext: #ADADAD;
     --background: #E5E5E5;
 
-    --title: 1.8rem;
+    --title: 5rem;
     --subtitle: 3.2rem;
     --subsection: 1.8rem;
 }
@@ -32,6 +32,9 @@ body {
     font-family: 'Rubik', sans-serif;
     background-color: var(--background);
 
+}
+h1{
+    font-size: var(--title);
 }
 
 h2 {
@@ -179,6 +182,7 @@ h2 {
 
 .card__text {
     color: var(--black);
+    margin: 0;
 }
 
 .sosial-icons {
@@ -465,6 +469,21 @@ h2 {
 
     .contact-me {
         width: 50%;
+       
+    }
+
+    .contact-me__btn{
+        min-height: 4rem;
+    }
+
+    .sosial-icons{
+        gap: 2rem;
+
+    }
+
+    .sosial-icons__img{
+        padding: 1rem;
+        width: 7rem;
     }
 
     .services__about--none {
